@@ -27,7 +27,7 @@ public class SuccessfulLogin extends TestUtil {
         WebElement loginBtn = driver.findElement(By.cssSelector("[name=login-button]"));
         loginBtn.click();
 
-        WebElement productsPageTitle = driver.findElement(By.xpath("//span[contains(text(),'Productss')]"));
+        WebElement productsPageTitle = driver.findElement(By.xpath("//span[contains(text(),'Products')]"));
         Assert.assertTrue(productsPageTitle.isDisplayed());
     }
 }
